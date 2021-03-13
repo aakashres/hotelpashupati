@@ -19,7 +19,7 @@
     <div class="top-srip-agileinfo">
       <div class="w3ls-social-icons text-left">
         {% for media in medias %}
-          <a class="icon" href="{{media.link}}"><i class="fa {{media.icon_class}}"></i></a>
+          <a class="icon" href="{{media.link}}" target="_blank"><i class="fa {{media.icon_class}}"></i></a>
         {% endfor %}
       </div>
       <div class="agileits-contact-info text-right">
@@ -42,22 +42,14 @@
           <h4>Quick links</h4>
           <ul>
             <li><a href="{% url 'homepage' %}">Home</a></li>
-            <li><a href="{% url 'servicepage' %}">Services</a></li>
+            <li><a href="{% url 'roompage' %}">Rooms</a></li>
             <li><a href="{% url 'gallerypage' %}">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="{% url 'servicepage' %}">Services</a></li>
+            <li><a href="{% url 'contactpage' %}">Contact</a></li>
+            <br>
           </ul>
         </div>
         <div class="col-md-3 footer-info-grid address">
-          <h4>Address</h4>
-          <address>
-            <ul>
-              <li>Mexico United States 3000</li>
-              <li>40019 Honey Street</li>
-              <li>BO,Mexico</li>
-              <li>Telephone : +1 (734) 123-4567</li>
-              <li>Email : <a class="mail" href="mailto:mail@example.com">info(at)example.com</a></li>
-            </ul>
-          </address>
         </div>
         <div class="col-md-3 footer-grid">
         </div>
@@ -67,15 +59,12 @@
             <section class="social">
               <ul>
               {% for media in medias %}
-                <li><a class="icon" href="{{media.link}}"><i class="fa {{media.icon_class}}"></i></a></li>
+                <li><a class="icon" href="{{media.link}}" target="_blank"><i class="fa {{media.icon_class}}"></i></a></li>
               {% endfor %}
               </ul>
             </section>
 
-          </div>
-
-
-
+          </div>  
         </div>
         <div class="clearfix"></div>
       </div>
