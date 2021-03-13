@@ -1,0 +1,176 @@
+{% extends "layouts/frontend/base.html" %}
+{% load static %}
+{% block content %}
+<div id="demo-1" class="banner-inner">
+   <div class="header-w3-agileits" id="home">
+      <div class="inner-header-agile">
+         <nav class="navbar navbar-default">
+            <!-- navbar-header -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1>
+                  <a  href="{% url "homepage" %}">
+                     <span>P</span>ashupati
+                     <p class="s-log">View</p>
+                  </a>
+               </h1>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                    <li><a href="{% url 'homepage'%}">Home</a></li>
+                    <li class="active"><a href="{% url 'roompage'%}">Rooms</a></li>
+                    <li><a href="{% url 'gallerypage'%}">Gallery</a></li>
+                    <li><a href="{% url 'servicepage'%}">Services</a></li>
+                    <li><a href="{% url 'contactpage'%}">Contact</a></li>
+               </ul>
+            </div>
+            <div class="clearfix"> </div>
+         </nav>
+      </div>
+   </div>
+</div>
+<!--/banner-section-->
+<!--//main-header-->
+<!-- breadcrumb -->
+<div class="w3_breadcrumb">
+   <div class="breadcrumb-inner">
+      <ul>
+         <li><a href="{% url 'homepage'%}">Home</a> <i> /</i></li>
+         <li>Rooms</li>
+      </ul>
+   </div>
+</div>
+<!-- //breadcrumb -->
+<!--/content-inner-section-->
+<div class="w3_content_agilleinfo_inner">
+   <div class="container">
+      <div class="inner-agile-w3l-part-head">
+         <h2 class="w3l-inner-h-title">Rooms</h2>
+      </div>
+      <!-- services -->
+      <div class="w3_agileits_services_grids">
+        {% for room in rooms %}
+         <div class="col-md-3 w3_agileits_services_grid hvr-overline-from-center">
+            <div class="w3_agileits_services_grid_agile">
+               <div class="w3_agileits_services_grid_1">
+                  <img src="{{room.photo.url}}" alt="service-img">
+               </div>
+               <h3>{{room.name}}/</h3>
+               <p>{{room.detail |safe}}</p>
+            </div>
+         </div>
+        {% endfor %}
+         <div class="clearfix"> </div>
+      </div>
+   </div>
+</div>
+<!-- /plans -->
+<div class="plans-section">
+   <div class="container">
+      <h3 class="w3l-inner-h-title">Rates</h3>
+      <div class="priceing-table-main">
+        {% for room in rooms %}
+            <div class="col-md-3 price-grid">
+                <div class="price-block agile">
+                <div class="price-gd-top pric-clr{{forloop.counter}}">
+                    <h4>{{room.name}}</h4>
+                    <h3 style="font-size: 5em!important"><span>रू</span>{{room.price}}</h3>
+                    <h5>1 Night</h5>
+                </div>
+                <div class="price-gd-bottom">
+                    <div class="price-list">
+                        <ul>
+                        {% for i in "x"|rjust:"20"|make_list %}
+                        {% endfor %}
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                        </ul>
+                        <h6 class="bed"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+                    </div>
+                </div>
+                </div>
+            </div>
+        {% endfor %}
+         <div class="clearfix"> </div>
+      </div>
+   </div>
+</div>
+<!-- Modal1 -->
+<div class="modal fade" id="myModal1" role="dialog">
+   <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4>Reservation Form</h4>
+            <div class="book-form-inner">
+               <form action="#" method="post">
+                  <div class="col-md-6 form-date-w3-agileits1">
+                     <label><i class="fa fa-user" aria-hidden="true"></i> Name :</label>
+                     <input type="text" name="name" placeholder="Your name" required="">
+                  </div>
+                  <div class="col-md-6 form-date-w3-agileits1 second-agile1">
+                     <label><i class="fa fa-envelope" aria-hidden="true"></i> Email :</label>
+                     <input type="email" name="email" placeholder="Your email" required="">
+                  </div>
+                  <div class="col-md-6 form-date-w3-agileits">
+                     <label><i class="fa fa-calendar" aria-hidden="true"></i> Arrival Date :</label>
+                     <input  id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+                  </div>
+                  <div class="col-md-6 form-time-w3layouts second-agile">
+                     <label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
+                     <input type="time">
+                  </div>
+                  <div class="col-md-6 form-date-w3-agileits">
+                     <label><i class="fa fa-calendar" aria-hidden="true"></i> Departure Date :</label>
+                     <input  id="datepicker1" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+                  </div>
+                  <div class="col-md-6 form-time-w3layouts1 second-agile1">
+                     <label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
+                     <input type="time">
+                  </div>
+                  <div class="col-md-6 form-left-agileits-w3layouts1 bottom-w3ls1">
+                     <label><i class="fa fa-home" aria-hidden="true"></i> Choose a Room :</label>
+                     <select class="form-control">
+                        <option></option>
+                        <option>Standard Double Room</option>
+                        <option>Standard Family Room</option>
+                        <option>Garden Family Room</option>
+                        <option>Deluxe Double Room</option>
+                        <option>Executive Junior Suite</option>
+                        <option>Maisonette</option>
+                     </select>
+                  </div>
+                  <div class="col-md-6 form-left-agileits-w3layouts1 second-agile1">
+                     <label><i class="fa fa-users" aria-hidden="true"></i> No.of People :</label>
+                     <select class="form-control">
+                        <option></option>
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5 People</option>
+                        <option>More</option>
+                     </select>
+                  </div>
+                  <div class="clearfix"> </div>
+                  <div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
+                     <input type="submit" value="Make a Reservation">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- //Modal1 -->
+<!--//content-inner-section-->
+{% endblock %}

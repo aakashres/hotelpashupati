@@ -1,0 +1,30 @@
+{% extends 'layouts/admin/base.html' %}
+
+{% block head_title %}
+{{block.super}} | Contact Detail
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="section-body">
+        <h2>Contact Detail</h2>
+        <div class="card">
+            <div class="card-body">
+                <ul style="list-style-type:none;">
+                    <li><i class="fa fa-info" aria-hidden="true"></i>  {{object.name}}</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>  {{object.phone_no}}</li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i>  {{object.email}}</li>
+                    <li><i class="fa fa-car" aria-hidden="true"></i>  {{object.address}}</li>
+                    <li><i class="fa fa-clock-o" aria-hidden="true"></i>  {{object.contact_time}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js%}
+<script type="text/javascript">
+    $('#contact').addClass('active')
+</script>
+{% endblock %}

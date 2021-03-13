@@ -1,0 +1,45 @@
+
+
+
+{% extends 'layouts/admin/base.html' %}
+
+{% block head_title %}
+{{block.super}} | Home Page
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="section-body">
+        {% if can_create %}
+        <div class="card">
+            <div class="card-body" style="height:100%;">
+                <a style="margin-bottom: 10px;" class="btn ink-reaction btn-floating-action btn-primary pull-right"
+                    href="{% url 'home:admin_home_create' %}"><i class="fa fa-plus"></i></a>
+            </div>
+        </div>
+        {% else %}
+        <div class="card">
+            <div class="card-body" style="height:100%;">
+                <a style="margin-bottom: 10px;" class="btn ink-reaction btn-floating-action btn-primary pull-right"
+                    href="{% url 'home:admin_home_update' page.id %}"><i class="fa fa-edit"></i></a>
+                <a style="margin-bottom: 10px; margin-right: 10px;" class="btn ink-reaction btn-floating-action btn-primary pull-right"
+                    href="{% url 'home:admin_home_delete' page.id %}"><i class="fa fa-trash"></i></a>
+                <br>
+                <br>
+                <br>
+                <h3 style="text-align: center;">{{page.title}}</h3>
+                <h4 style="text-align: center;">{{page.tagline}}</h4>
+                {{page.details| safe}}<br />
+                {{page.room_info | safe}}<br />
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js%}
+<script type="text/javascript">
+    $('#home').addClass('active')
+</script>
+{% endblock %}

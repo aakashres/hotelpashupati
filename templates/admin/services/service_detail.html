@@ -1,0 +1,28 @@
+
+
+
+{% extends 'layouts/admin/base.html' %}
+
+{% block head_title %}
+{{block.super}} | Service Detail
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="section-body">
+        <h2>{{ gallery.name }}</h2>
+        <div class="card">
+            <div class="card-body">
+                <h3>{{service.name}}</h3>
+                {{service.detail | safe}}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js%}
+<script type="text/javascript">
+    $('#service').addClass('active')
+</script>
+{% endblock %}

@@ -1,0 +1,30 @@
+
+
+
+{% extends 'layouts/admin/base.html' %}
+
+{% block head_title %}
+{{block.super}} | Room Detail
+{% endblock %}
+
+{% block content %}
+<section>
+    <div class="section-body">
+        <h2>Room Detail</h2>
+        <div class="card">
+            <div class="card-body">
+            <h3>{{room.name}} <small>{{room.price}} Per Night</small></h3>
+            <p>{{room.detail}}</p>
+            <img src={{room.photo.url}}>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js%}
+<script type="text/javascript">
+    $('#room').addClass('active')
+</script>
+{% endblock %}`
