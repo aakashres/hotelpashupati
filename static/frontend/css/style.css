@@ -572,7 +572,7 @@ span.simply-word {
 	width:32%;
 }
 .w3l-b-one{
-      background: #000 url(../images/b1.jpg) no-repeat 0px 0px;
+      background: #000 url(/static/frontend/images/b1.jpg) no-repeat 0px 0px;
     min-height:100px;
     background-size: cover;
     text-align: center;
@@ -707,7 +707,7 @@ h3.tittle.fea {
     border: 1px solid #e4e3ea;
 }
 .side-bar-form input[type="submit"] {
-    background: url(../images/search.png) no-repeat 9px 9px #2baf2b;
+    background: url(/static/frontend/images/search.png) no-repeat 9px 9px #2baf2b;
     width: 44px;
     height: 41px;
     border: none;
@@ -1458,7 +1458,7 @@ a.pa_italic:focus {
     width:64px;
     height:64px;
     cursor: pointer;
-    background: url('../images/play-button.png') no-repeat 0px 0px;
+    background: url('/static/frontend/images/play-button.png') no-repeat 0px 0px;
     background-size: auto, cover;
     z-index: 9;
 }
@@ -1469,7 +1469,7 @@ a.pa_italic:focus {
     width:64px;
     height:64px;
     cursor: pointer;
-    background: url('../images/play-button.png') no-repeat 0px 0px;
+    background: url('/static/frontend/images/play-button.png') no-repeat 0px 0px;
     background-size: auto, cover;
     z-index: 9;
 }
@@ -1600,7 +1600,7 @@ section.slider {
 	border-radius: 50%;
 }
 .guests-agile {
-    background: url(../images/bottom.jpg) no-repeat 0px 0px;
+    background: url(/static/frontend/images/bottom.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2041,7 +2041,7 @@ ul.top-links li a i.fa:hover {
     margin: 0 0.2em;
 }
 .social-icons ul li a {
-    background: url(../images/social-icons.png) no-repeat 0px -1px;
+    background: url(/static/frontend/images/social-icons.png) no-repeat 0px -1px;
     display: block;
     height: 26px;
     width: 26px;
@@ -2123,7 +2123,7 @@ ul.top-links li a i.fa:hover {
 }
 .check-box input[type="checkbox"]:checked+label span:first-child:before {
     content: "";
-    background: url(../images/tick.png)no-repeat;
+    background: url(/static/frontend/images/tick.png)no-repeat;
     position: absolute;
     left: 2px;
     top: 2px;
@@ -2603,7 +2603,7 @@ a.icon.gp {
     height:34px;
     border: none;
     text-indent: 100%;
-    background: url(../images/move-top.png) no-repeat 0px 0px;
+    background: url(/static/frontend/images/move-top.png) no-repeat 0px 0px;
 }
 /*-- /responsive --*/
 @media (max-width:1440px){
