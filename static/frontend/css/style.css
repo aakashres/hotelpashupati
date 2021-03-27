@@ -186,7 +186,7 @@ input[type="submit"],.w3l_header_left ul li a,.related-post-right h4 a,.comments
 	font-family: 'Open Sans', sans-serif;
 }
 h1 span {
-    color: #00acee;
+    color: #B55328;
     font-size: 1.8em;
 }
 /*-- //logo --*/
@@ -346,7 +346,7 @@ p.s-log {
 	white-space: nowrap;
 	color: transparent;
 	z-index: 3;
-	    background: #00acee;
+	    background: #B55328;
 }
 
 .cd-search-trigger::before, .cd-search-trigger::after {
@@ -621,7 +621,7 @@ h3.tittle.two {
 a.read {
     border: none;
     outline: none;
-    background: #00acee;
+    background: #B55328;
     padding: 0.7em 1.5em 0.7em 1.5em;
     color: #fff;
     text-transform: uppercase;
@@ -672,7 +672,7 @@ a.read:hover {
 }
 .spa-grid:hover{
 	    border-right: 1px solid #1589b5;
-    background: #00acee;
+    background: #B55328;
 }
 .spa-grid:nth-child(5) {
 	 border:none;
@@ -821,7 +821,7 @@ h4.side-t-w3l-agile {
 
 }
 .w3_agileits_services_grid:hover .w3_agileits_services_grid_agile h3{
-	color:#00acee;
+	color:#B55328;
 	
 }
 .w3_agileits_services_grid:hover .w3_agileits_services_grid_agile p{
@@ -915,7 +915,7 @@ h4.side-t-w3l-agile {
 /*--//services-section--*/
 /*-- /short-codes --*/
 .w3_breadcrumb {
-       background: #00acee;
+       background: #B55328;
     text-align: center;
     padding: 0.8em 0;
 }
@@ -1407,13 +1407,13 @@ h3.tittle.why {
 	text-decoration: none;
 }
 .panel-default {
-      border-color: #00acee;
-    background: #00acee;
+      border-color: #B55328;
+    background: #B55328;
 }
 .panel-default > .panel-heading {
     border-color: #FFF;
 	color:#212121;
-       background-color: #00acee;
+       background-color: #B55328;
 }
 .panel-body {
     padding: 2em;
@@ -1764,7 +1764,7 @@ figure.effect-apollo:hover p {
     list-style: none;
 }
 .price-gd-top {
-    background:#00acee;
+    background:#B55328;
     text-align: center;
 }
 .price-gd-top h4 {
@@ -1864,7 +1864,7 @@ figure.effect-apollo:hover p {
     z-index: 1;
 }
 h6.bed{
-	color:#00acee;
+	color:#B55328;
 	font-size: 3em;
     margin: 2px 0;
 }
@@ -1957,7 +1957,7 @@ h6.bed.four{
     -webkit-appearance: none;
 }
 .book-form-inner  input[type=submit]:hover {
-    background: #00acee;
+    background: #B55328;
     color: #fff;
 }
 /*-- social-icons --*/
@@ -2102,7 +2102,7 @@ ul.top-links li a i.fa:hover {
     -ms-transition: 0.5s all;
 }
 .book-form input[type=submit]:hover {
-      background: #00acee;
+      background: #B55328;
     color: #fff;
 }
 .check-box input[type="checkbox"]+label {
@@ -2178,7 +2178,7 @@ ul.top-links li a i.fa:hover {
 	    outline: none;
     font-style: normal;
     padding: 0.9em 4em;
-    background: #00acee;
+    background: #B55328;
     font-size: 16px;
     color: #fff;
     display: block;
@@ -2364,7 +2364,7 @@ h3.tittle, h2.w3l-inner-h-title, h3.w3l-inner-h-title {
 /*-- //single --*/
 .w3agile_footer_copy {
     text-align: center;
-    background: #00acee;
+    background: #B55328;
     padding: 1em 0;
 }
 .w3agile_footer_copy p {
@@ -2403,7 +2403,7 @@ h3.tittle, h2.w3l-inner-h-title, h3.w3l-inner-h-title {
 	text-decoration: underline;
 }
 a.mail {
-    color: #00acee;
+    color: #B55328;
 }
 a.mail:hover {
     color:#2baf2b;
@@ -2450,7 +2450,7 @@ a.mail:hover {
     letter-spacing: 1px;
 }
 .newsletter input[type="submit"]:hover {
-    background: #00acee;
+    background: #B55328;
 }
 .footer-grid-instagram a {
     float: left;
@@ -2507,11 +2507,11 @@ a.mail:hover {
     border-color:#6788ce;
 }
 .social .tw{
-    background: #00ACEE;
+    background: #B55328;
 }
 .social .tw:before,
 .social .tw:after{
-    border-color: #00ACEE;
+    border-color: #B55328;
 }
 
 .social .gp{
@@ -3264,7 +3264,7 @@ a.icon.gp {
 		text-align: center;
 	}
 	.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-		color:#00acee!important;
+		color:#B55328!important;
 		
 	}
 	.navbar-nav > li > a {
@@ -3340,7 +3340,7 @@ a.icon.gp {
 		letter-spacing: 4px;
 	}
 	a.w3_play_icon1 {
-		background: #00acee;
+		background: #B55328;
 		padding: 0.6em 1.3em 0.6em 1.3em;
 		letter-spacing: 1px;
 		font-size: 0.9em;
@@ -3818,7 +3818,7 @@ a.icon.gp {
 }
 @media (max-width:384px){
 	a.w3_play_icon1 {
-		background: #00acee;
+		background: #B55328;
 		padding: 0.5em 1.2em 0.5em 1.2em;
 		letter-spacing: 1px;
 		font-size: 0.8em;
